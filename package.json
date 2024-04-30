@@ -9,7 +9,8 @@
   "author": "Shekhar",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.7.3"
+    "cypress": "^13.7.3",
+    "cypress-slack-reporter": "^1.5.3"
   },
   "dependencies": {
     "cypress-real-events": "^1.12.0"
