@@ -1,4 +1,4 @@
-describe('Access to the Admin section', () => {
+describe('Search the User in Admin section', () => {
     it('Admin section', () => {
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', {headers: {"Accept-Encoding": "gzip, deflate"}})
         cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin') 
