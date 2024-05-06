@@ -22,7 +22,7 @@ describe('Filters in admin section', () => {
         */
         //Add the New job Catgory
         cy.get('.oxd-button').click()
-        cy.get(':nth-child(2) > .oxd-input').type('Manual Testing')
+        cy.get(':nth-child(2) > .oxd-input').type('Manual Testing1')
         cy.get('.oxd-button--secondary').click()
           })
           

@@ -18,7 +18,7 @@ describe('Organization filter operations in Admin section', () => {
         cy.wait(3000)
         // Add the location
         cy.get('.orangehrm-header-container > div > .oxd-button').click()
-        cy.get(':nth-child(1) > .oxd-grid-2 > .oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-input').type('IT Department Gurgaon')
+        cy.get(':nth-child(1) > .oxd-grid-2 > .oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-input').type('IT Department Noida')
         cy.get(':nth-child(2) > .oxd-grid-2 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type('India')
         cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Haryana')
         cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('2452052')
