@@ -15,7 +15,29 @@ describe('Corporate Branding Publishing in Admin section', () => {
         cy.get('input[type="range"]').click()
         cy.contains('.oxd-color-picker-indicator', 'Black').click();
         */
-        //cy.get(':nth-child(2) > .orangehrm-file-input > .oxd-input-group > :nth-child(2) > .oxd-file-div').selectFile("C:\\Users\\Lenovo\\Downloads\\1501179.jpg")
-          })
+
+        //cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > form:nth-child(3) > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)").selectFile("C:\\Users\\Lenovo\\Downloads\\1501179.jpg")
+        
+        
+        //Upload file
+        /*
+        cy.fixture('sample_640×426.jpeg').then(fileContent => {
+          cy.get("body > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > form:nth-child(3) > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)").then(input => {
+            const blob = Cypress.Blob.base64StringToBlob(fileContent, 'image/jpeg');
+            const file = new File([blob], 'sample_640×426.jpeg', { type: 'image/jpeg' });
+        
+            const fileList = [file];
+            const dataTransfer = new DataTransfer();
+            fileList.forEach(file => dataTransfer.items.add(file));
+            input[0].files = dataTransfer.files;
+        
+            cy.wrap(input).trigger('change', { force: true });
           
-    })
+            */
+            cy.get('.oxd-button--secondary').click()
+          });
+        });
+          
+      //})
+          
+    //})
