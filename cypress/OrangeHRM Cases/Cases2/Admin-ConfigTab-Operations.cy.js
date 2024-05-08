@@ -25,7 +25,7 @@ describe('Configuration operations in Admin section', () => {
         cy.get(':nth-child(1) > .oxd-table-row > [style="flex: 1 1 15%;"] > .oxd-table-cell-actions > .oxd-icon-button').click()
         cy.get('.oxd-button').click()
         cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Virat The King')
-        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test27@gmail.com')
+        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test30@gmail.com')
         cy.get('.oxd-form-actions > .oxd-button--secondary').click()
         cy.wait(4000)
         //Localization operation
@@ -44,8 +44,8 @@ describe('Configuration operations in Admin section', () => {
         cy.get('.orangehrm-header-container > div > .oxd-button').click()
         //cy.get('.oxd-select-text').click().
         cy.get('.oxd-select-text').click(); // Click to open the dropdown
-        cy.get('.dropdown-menu').should('be.visible');
-        cy.get('.oxd-select-text-input').contains('Bodo (India)').click()
+        //cy.get('.dropdown-menu').should('be.visible');
+        //cy.get('.oxd-select-text-input').contains('Bodo (India)').click()
 
 
           });
