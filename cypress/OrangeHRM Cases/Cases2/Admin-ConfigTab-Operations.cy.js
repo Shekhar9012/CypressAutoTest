@@ -25,17 +25,29 @@ describe('Configuration operations in Admin section', () => {
         cy.get(':nth-child(1) > .oxd-table-row > [style="flex: 1 1 15%;"] > .oxd-table-cell-actions > .oxd-icon-button').click()
         cy.get('.oxd-button').click()
         cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Virat The King')
-        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test13@gmail.com')
+        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Test27@gmail.com')
         cy.get('.oxd-form-actions > .oxd-button--secondary').click()
         cy.wait(4000)
-        //Localizatio operation
-        cy.get('.oxd-topbar-body-nav > ul > :nth-child(5)').click() //Clicking on more button to show more options
-        cy.get(':nth-child(3) > li').click() //click on config option from more list
+        //Localization operation
+        cy.get('.oxd-topbar-body-nav > ul > :nth-child(5)').click()
+        cy.get(':nth-child(3) > li').click() 
         cy.get('.oxd-topbar-body-nav-tab-accordian > :nth-child(3)').click()
         cy.get(':nth-child(1) > .oxd-grid-2 > .oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click()
         cy.get('.oxd-select-dropdown > :nth-child(4)').click()
         //cy.get(':nth-child(2) > .oxd-grid-2 > .oxd-grid-item > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click()
         cy.get('.oxd-button').click()
+        cy.wait(4000)
+        //Language packages
+        cy.get('.oxd-topbar-body-nav > ul > :nth-child(5)').click() 
+        cy.get(':nth-child(3) > li').click() 
+        cy.get('.oxd-topbar-body-nav-tab-accordian > :nth-child(4)').click()
+        cy.get('.orangehrm-header-container > div > .oxd-button').click()
+        //cy.get('.oxd-select-text').click().
+        cy.get('.oxd-select-text').click(); // Click to open the dropdown
+        cy.get('.dropdown-menu').should('be.visible');
+        cy.get('.oxd-select-text-input').contains('Bodo (India)').click()
+
+
           });
     
         });
